@@ -49,13 +49,13 @@ ul {
 }
 .cd-horizontal-timeline .events-wrapper::before {
   left: 0;
-  background-image: -webkit-linear-gradient( left , #e44c65, rgba(248, 248, 248, 0));
-  background-image: linear-gradient(to right, #e44c65, rgba(248, 248, 248, 0));
+  background-image: -webkit-linear-gradient( left , #1c1d26, rgba(248, 248, 248, 0));
+  background-image: linear-gradient(to right, #1c1d26, rgba(248, 248, 248, 0));
 }
 .cd-horizontal-timeline .events-wrapper::after {
   right: 0;
-  background-image: -webkit-linear-gradient( right , #e44c65, rgba(248, 248, 248, 0));
-  background-image: linear-gradient(to left, #e44c65, rgba(248, 248, 248, 0));
+  background-image: -webkit-linear-gradient( right , #1c1d26, rgba(248, 248, 248, 0));
+  background-image: linear-gradient(to left, #1c1d26, rgba(248, 248, 248, 0));
 }
 .cd-horizontal-timeline .events {
   /* this is the grey line/timeline */
@@ -296,7 +296,7 @@ ul {
 }
 .cd-horizontal-timeline .events-content p {
   /* font-size: 1.4rem; */
-  color: #959595;
+  /* color: #959595; */
 }
 .cd-horizontal-timeline .events-content em, .cd-horizontal-timeline .events-content p {
   line-height: 1.6;
