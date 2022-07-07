@@ -1,3 +1,16 @@
+// Bylaws button
+function showDiv() {
+	var x = document.getElementById("bylawsDiv");
+	var elem = document.getElementById("BylawsBtn");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+	if (elem.value=="Hide Bylaws") elem.value = "View Bylaws";
+    else elem.value = "Hide Bylaws";
+}
+
 (function($) {
 
 	var	$window = $(window),
