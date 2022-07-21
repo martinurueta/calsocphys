@@ -1,6 +1,7 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");
 
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -64,6 +65,16 @@ input, select, textarea {
 	-webkit-appearance: none;
 	-ms-appearance: none;
 	appearance: none;
+}
+
+/* Home page mobile */
+.mobilehome {
+	height: 60vh !important;
+}
+
+/* Sections Height */
+.sections {
+	top: -275px !important;
 }
 
 /* Basic */
@@ -681,6 +692,8 @@ input, select, textarea {
 			}
 
 		}
+
+
 
 /* Row */
 
@@ -4515,6 +4528,10 @@ input, select, textarea {
 				font-size: 12pt;
 			}
 
+
+		.mobilehome {
+			height: auto !important;
+		}
 		/* Spotlight */
 
 			.spotlight {
@@ -4605,7 +4622,12 @@ input, select, textarea {
 		display: none;
 	}
 
-	@media screen and (max-width: 736px) {
+	@media screen and (max-width: 800px) {
+
+		/* Sections Height */
+		.sections {
+			top: -290px !important;
+		}
 
 		/* Basic */
 
@@ -4713,7 +4735,9 @@ input, select, textarea {
 					}
 
 		/* Nav */
-
+			#logo {
+				visibility: hidden;
+			}		
 			#page-wrapper {
 				-moz-backface-visibility: hidden;
 				-webkit-backface-visibility: hidden;
@@ -4805,10 +4829,10 @@ input, select, textarea {
 				-webkit-backface-visibility: hidden;
 				-ms-backface-visibility: hidden;
 				backface-visibility: hidden;
-				-moz-transform: translateX(-275px);
-				-webkit-transform: translateX(-275px);
-				-ms-transform: translateX(-275px);
-				transform: translateX(-275px);
+				-moz-transform: translateX(-335px);
+				-webkit-transform: translateX(-335px);
+				-ms-transform: translateX(-335px);
+				transform: translateX(-335px);
 				-moz-transition: -moz-transform 0.5s ease;
 				-webkit-transition: -webkit-transform 0.5s ease;
 				-ms-transition: -ms-transform 0.5s ease;
@@ -4819,7 +4843,7 @@ input, select, textarea {
 				overflow-y: auto;
 				position: fixed;
 				top: 0;
-				width: 275px;
+				width: 335px;
 				z-index: 10002;
 				background: #181920;
 				padding: 0.75em 1.25em;
@@ -4874,17 +4898,17 @@ input, select, textarea {
 					}
 
 			body.navPanel-visible #page-wrapper {
-				-moz-transform: translateX(275px);
-				-webkit-transform: translateX(275px);
-				-ms-transform: translateX(275px);
-				transform: translateX(275px);
+				-moz-transform: translateX(335px);
+				-webkit-transform: translateX(335px);
+				-ms-transform: translateX(335px);
+				transform: translateX(335px);
 			}
 
 			body.navPanel-visible #titleBar {
-				-moz-transform: translateX(275px);
-				-webkit-transform: translateX(275px);
-				-ms-transform: translateX(275px);
-				transform: translateX(275px);
+				-moz-transform: translateX(335px);
+				-webkit-transform: translateX(335px);
+				-ms-transform: translateX(335px);
+				transform: translateX(335px);
 			}
 
 			body.navPanel-visible #navPanel {
@@ -4964,4 +4988,12 @@ input, select, textarea {
 						padding: 0;
 					}
 
+	}
+
+	@media screen and (max-width: 400px) {
+
+		/* Sections Height */
+		.sections {
+			top: -330px !important;
+		}
 	}

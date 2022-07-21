@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Landed by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>California Society of Physiologists</title>
@@ -14,30 +9,47 @@
 		<link rel="icon" type="image/png" sizes="16x16" href="/images/logo.png"/>
 		<link rel="icon" type="image/png" sizes="196x196" href="/images/logo.png"/>
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/announcement.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
 	</head>
 	<body class="is-preload">
 		<div id="page-wrapper">
 
 			<!-- Navbar -->
-			<nav id="nav"></nav>
+			
+			<div id="nav"></div>
+			
 
-			<!-- Banner -->
-				<section style="top: -53px;" id="banner">
-					<div class="content">
-						<header>
-							<h2>California Society of Physiologists</h2>
-							<h1>a Chapter of the American Physiological Society</h1>
-							
-						</header>
-						<span><img src="images/favicon-196x196.png" alt="" /></span>
-						<br><br><center><p style="color:#ffbc38">Enhancing the Future of Physiology in California</p></center>
+			<!-- Announcement -->
+			<div class="announcement open">
+				<div class="wrappers">
+					<label class="announcement__close">&#x2715;</label>
+					<div class = "left_wrappers">
+						<h2 class="announcement__title">Join us for the November Annual Meeting of the California Society of Physiologists!</h2>
+				  		<p>Friday, November 4, 2022</p>
 					</div>
-					<a href="#one" class="goto-next scrolly">Next</a>
-				</section>
+				  	<div class = "right_wrappers">
+						<a href="currentevents.html" class="button">Learn More</a>
+					</div>
+				</div>
+			  </div>
+			<!-- Banner -->
+			<section style="z-index: 0;" id="banner" class="sections">
+				<div class="content">
+					<header>
+						<h2>California Society of Physiologists</h2>
+						<h1>a Chapter of the American Physiological Society</h1>
+						
+					</header>
+					<span><img src="images/favicon-196x196.png" alt="" /></span>
+					<br><br><center><p style="color:#ffbc38">Enhancing the Future of Physiology in California</p></center>
+				</div>
+				<a href="#one" class="goto-next scrolly">Next</a>
+			</section>
 
 			<!-- One -->
-				<section style="top: -53px;" id="one" class="spotlight style1 bottom">
+				<section id="one" class="sections spotlight style1 bottom">
 					<span class="image fit main"><img src="images/pic03.jpg" alt="" /></span>
 					<div class="content">
 						<div class="container">
@@ -73,7 +85,7 @@
 				</section>
 
 			<!-- Two -->
-				<section style="top: -53px; height:60vh" id="two" style="height:60vh" class="spotlight style2 right">
+				<section id="two" class="sections mobilehome spotlight style2 right">
 					<span class="image fit main"><img src="images/firstpastpresidents.jpeg" alt="" /></span>
 					<div class="content">
 						<header>
@@ -88,7 +100,7 @@
 				</section>
 
 			<!-- Three -->
-				<section style="top: -53px; height:60vh" id="three" style="height:60vh" class="spotlight style3 left">
+				<section id="three" class="sections mobilehome spotlight style3 left">
 					<span class="image fit main bottom"><img src="images/labwork.jpeg" alt="" /></span>
 					<div class="content">
 						<header>
@@ -103,11 +115,11 @@
 				</section>
 
 			<!-- Four -->
-			<section id="four" style="top: -53px; height:60vh" class="spotlight style2 right">
+			<section id="four" class="sections mobilehome spotlight style2 right">
 				<span class="image fit main"><img src="images/bodel.jpeg" alt="" /></span>
 				<div class="content">
 					<header>
-						<h2>Bodel Schdmit - Nielsen
+						<h2>Bodil Schmidt-Nielsen
 					</header>
 					<p>First woman President of the American Physiological Society</p>
 				</div>
@@ -115,7 +127,7 @@
 			</section>
 
 			<!-- Five -->
-			<section id="five" class="wrapper style1 special fade-up">
+			<section id="five" style="margin-top: -200px;" class="sections wrapper style1 special fade-up">
 				<div class="container">
 					<header class="major">
 						<h2>Executive Committee</h2>
@@ -155,7 +167,7 @@
 				</div>
 			</section>
 
-			<section class="fade-up" style="text-align: center; display:flex; justify-content: center;">
+			<section class="fade-up sections" style="text-align: center; display:flex; justify-content: center;">
 				<input style="margin-top:50px; margin-bottom:50px;" id="BylawsBtn" type="button" value="View Bylaws" onclick="showDiv()" />
 			</section>
 			<div class="container" id="bylawsDiv" style="display:none;height:500px; margin-bottom: 50px;">
@@ -174,6 +186,7 @@
 				</ul>
 			</footer>
 
+		
 		</div>
 
 		<!-- Scripts -->
@@ -189,6 +202,10 @@
 			$(function(){
 				$("#nav").load("includes/nav.html");
 			});
+			$('.announcement__close').click(function(){
+  				$(".announcement, .content_announcement").removeClass("open");
+			});
 		</script>
+		
 	</body>
 </html>
