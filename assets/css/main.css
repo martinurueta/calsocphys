@@ -4939,12 +4939,12 @@ input, select, textarea {
 
 		/* Button */
 
-			input[type="submit"],
+			/* input[type="submit"],
 			input[type="reset"],
 			input[type="button"],
 			.button {
 				padding: 0;
-			}
+			} */
 
 		/* Spotlight */
 
