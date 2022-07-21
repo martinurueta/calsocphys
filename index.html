@@ -170,8 +170,9 @@
 			<section class="fade-up sections" style="text-align: center; display:flex; justify-content: center;">
 				<input style="margin-top:50px; margin-bottom:50px;" id="BylawsBtn" type="button" value="View Bylaws" onclick="showDiv()" />
 			</section>
+			
 			<div class="container" id="bylawsDiv" style="display:none;height:500px; margin-bottom: 50px;">
-				<embed src="assets/california_chapter_aps_bylaws_final.pdf" width="100%" height="100%" />
+				<iframe id="pdf-js-viewer" src="/web/viewer.html?file=%2Fassets%2Fcalifornia_chapter_aps_bylaws_final.pdf" title="webviewer" width="100%" height="500px"></iframe>
 			</div>
 
 			<!-- Footer -->
@@ -198,6 +199,7 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.14.305/pdf.min.js" integrity="sha512-dw+7hmxlGiOvY3mCnzrPT5yoUwN/MRjVgYV7HGXqsiXnZeqsw1H9n9lsnnPu4kL2nx2bnrjFcuWK+P3lshekwQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		<script>
 			$(function(){
 				$("#nav").load("includes/nav.html");
