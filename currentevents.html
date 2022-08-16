@@ -9,6 +9,7 @@
         <link rel="icon" type="image/png" sizes="16x16" href="/images/logo.png"/>
         <link rel="icon" type="image/png" sizes="196x196" href="/images/logo.png"/>
 		<link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/lightbox.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
     <body class="is-preload">
@@ -21,26 +22,30 @@
                     <header class="major">
                         <!-- Event Name -->
                         <h2>Annual Meeting of the California Society of Physiologists</h2>
-                        <p>Small description</p>
+                        <p>Join us for our annual meeting!</p>
                     </header>
                     <section id="content">
+                        
                         <ul>
                             <li>Date: Friday, November 4, 2022</li>
-                            <li>Location: Lundquist Institute for Biomedical Innovation, MRL building, Torrance, CA</li>
-                            <li>Program: TBD</li>
-                            <li>Registration: TBD</li>
+                            <li>Location: The Lundquist Institute for Biomedical Innovation at Harbor-UCLA Medical Center <br>1124 West Carson Street, Torrance, CA, 90502</li>
+                            <li>Program: 8:00AM - 6:00PM</li>
+                            <li>Registration: $50 Faculty / $20 Trainees (includes breaks and lunch)</li>
                         </ul>
                         <h3>Extra information: TBD</h3>
                         <p>
                             Hotel Accommodations: TBD<br>
                             Presentation Submissions: TBD<br>
                             Please Note: TBD<br>
-                            Deadline for submissions:" TBD</p>
+                            Deadline for submissions: TBD</p>
                     </section>
                     <footer style="display:flex; justify-content:center;">
                         <ul class="actions">
-                            <li><a href="#" class="button">Agenda</a></li>
-                            <li><a href="#" class="button">Registration</a></li>
+                            <li><a href="#flyer" class="button">Flyer</a></li>
+                            <a href="#" class="lightbox" id="flyer">
+                                <span style="background-image: url('assets/CSP-2022-Annual-Meeting-Invite-v7.jpg')"></span>
+                            </a>
+                            <li><a href="https://www.eventbrite.com/e/the-california-society-of-physiologists-2022-annual-meeting-tickets-400439293707" class="button" target="_blank">Registration</a></li>
                         </ul>
                     </footer>
                 </div>
@@ -59,13 +64,14 @@
         </div>
         <!-- Scripts -->
         <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/jquery.scrolly.min.js"></script>
-        <script src="assets/js/jquery.dropotron.min.js"></script>
-        <script src="assets/js/jquery.scrollex.min.js"></script>
-        <script src="assets/js/browser.min.js"></script>
-        <script src="assets/js/breakpoints.min.js"></script>
-        <script src="assets/js/util.js"></script>
-        <script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.14.305/pdf.min.js" integrity="sha512-dw+7hmxlGiOvY3mCnzrPT5yoUwN/MRjVgYV7HGXqsiXnZeqsw1H9n9lsnnPu4kL2nx2bnrjFcuWK+P3lshekwQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script>
 			$(function(){
 				$("#nav").load("includes/nav.html");

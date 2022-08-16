@@ -9,6 +9,16 @@ function showDiv() {
 	}
 	if (elem.value=="Hide Bylaws") elem.value = "View Bylaws";
     else elem.value = "Hide Bylaws";
+
+	var y = document.getElementById("flyerDiv");
+	var elem2 = document.getElementById("FlyerBtn");
+	if (y.style.display === "none") {
+		y.style.display = "block";
+	} else {
+		y.style.display = "none";
+	}
+	if (elem2.value=="Hide Flyer") elem2.value = "View Flyer";
+    else elem2.value = "Hide Flyer";
 }
 
 (function($) {
